@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Velkoobchodní nabídka himálajského shilajitu 30 g pro e-shopy v ČR a na Slovensku. Ceník od 10 kusů, laboratorní rozbor šarže.">
+<title>Shilajit pro váš e-shop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Roboto:wght@400;500;700&display=swap">
+<style>
+/* Layout: obchodní nabídka – tmavý horský úvod s dózou, pak ceník jako hlavní obsah, důvody, rozbor a kontakt */
+:root{
+  --pine:#16231f; --pine-2:#1f322c; --sand:#f4ebe1; --paper:#fbf7f1; --ink:#1d2b28; --muted:#5b6a66; --line:#e2d6c6;
+  --amber:#e0952f; --amber-deep:#9a5c12; --ok:#2f6f4c;
+  --f-display:"Cormorant Garamond",Georgia,serif; --f-body:Roboto,system-ui,-apple-system,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6}
+.in{max-width:1080px;margin:0 auto;padding-inline:20px}
+h1,h2,h3{font-family:var(--f-display);font-weight:600;line-height:1.08;text-wrap:balance;margin:0}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500}
+/* hero */
+.hero{background:var(--pine);color:var(--sand)}
+.hero .in{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:32px;align-items:center;padding-block:56px 48px}
+.hero .eyebrow{color:var(--amber)}
+.hero h1{font-size:clamp(40px,6.4vw,68px);margin-top:12px}
+.hero h1 em{font-style:italic;color:var(--amber);font-weight:500}
+.hero p{color:#cfd8d2;max-width:52ch;margin:18px 0 0}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:28px;padding-top:22px;border-top:1px solid rgba(244,235,225,.16)}
+.facts div{display:flex;flex-direction:column}
+.facts b{font-family:var(--f-display);font-size:30px;font-weight:600;color:var(--sand);font-variant-numeric:tabular-nums;line-height:1.1}
+.facts span{font-size:13px;color:#a9b8b1}
+.jar{border-radius:14px;overflow:hidden;aspect-ratio:1;max-width:100%;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+.jar img{display:block;width:100%;height:100%;object-fit:cover}
+.cta{display:inline-flex;align-items:center;gap:8px;margin-top:26px;background:var(--amber);color:var(--pine);font-weight:700;text-decoration:none;padding:12px 20px;border-radius:8px}
+.cta:hover{background:#eaa548}
+.cta:focus-visible,a:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+/* sections */
+section{padding-block:56px}
+section+section{border-top:1px solid var(--line)}
+.head{display:flex;flex-direction:column;gap:8px;margin-bottom:28px;max-width:64ch}
+.head .eyebrow{color:var(--amber-deep)}
+.head h2{font-size:clamp(32px,4.4vw,46px);color:var(--pine-2)}
+.head p{margin:0;color:var(--muted)}
+/* price */
+.prices{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:24px;align-items:start}
+.calc{background:var(--pine);color:var(--sand);border-radius:14px;padding:22px 24px;display:flex;flex-direction:column;gap:14px}
+.calc .eyebrow{color:var(--amber)}
+.calc dl{margin:0;display:flex;flex-direction:column}
+.calc dl div{display:flex;justify-content:space-between;gap:12px;padding-block:10px;border-bottom:1px solid rgba(244,235,225,.14);font-variant-numeric:tabular-nums}
+.calc dt{color:#cfd8d2}.calc dd{margin:0;font-weight:500}
+.calc .tot{border-bottom:0}.calc .tot dt{color:var(--sand);font-weight:700}.calc .tot dd{font-family:var(--f-display);font-size:30px;font-weight:600;color:var(--amber);line-height:1}
+.calc p{margin:0;font-size:14px;color:#a9b8b1}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.card header{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;padding:20px 22px 14px}
+.card h3{font-size:30px;color:var(--pine-2)}
+.moc{font-size:13px;color:var(--muted)} .moc b{color:var(--ink);font-size:16px}
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:15px}
+th{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500;text-align:right;padding:8px 22px 8px 8px;border-top:1px solid var(--line);background:var(--sand)}
+th:first-child,td:first-child{text-align:left;padding-left:22px}
+td{text-align:right;padding:11px 22px 11px 8px;border-top:1px solid var(--line);white-space:nowrap}
+td.p{font-weight:700}
+td.m{color:var(--ok);font-weight:500}
+td.e{color:var(--muted)}
+tr.start td{background:#fdf3e4}
+tr.start td:first-child::after{content:"start";margin-left:8px;font-size:10px;letter-spacing:.08em;text-transform:uppercase;background:var(--amber);color:var(--pine);padding:2px 6px;border-radius:4px;vertical-align:2px}
+.note{font-size:14px;color:var(--muted);margin-top:16px;max-width:80ch}
+/* reasons */
+.reasons{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:28px 32px}
+.reasons div{display:flex;flex-direction:column;gap:6px;padding-top:16px;border-top:2px solid var(--amber)}
+.reasons h3{font-size:24px;color:var(--pine-2)}
+.reasons p{margin:0;color:var(--muted);font-size:15px}
+/* lab */
+.lab{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.1fr);gap:24px;align-items:start}
+.lab figure{margin:0;display:flex;flex-direction:column;gap:8px}
+.lab img{border:1px solid var(--line);border-radius:8px;background:#fff;width:100%}
+.lab figcaption{font-size:13px;color:var(--muted)}
+.lab .txt{display:flex;flex-direction:column;gap:14px}
+.big{font-family:var(--f-display);font-size:64px;line-height:1;color:var(--pine-2);font-weight:600}
+.big small{font-size:22px;color:var(--muted);font-family:var(--f-body);font-weight:400;display:block;margin-top:6px}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:20px;counter-reset:s;list-style:none;padding:0;margin:0}
+.steps li{counter-increment:s;display:flex;flex-direction:column;gap:6px}
+.steps li::before{content:counter(s);font-family:var(--f-display);font-size:40px;color:var(--amber);line-height:1}
+.steps b{font-size:17px}
+.steps span{color:var(--muted);font-size:15px}
+.wl{margin-top:36px;background:var(--sand);border-radius:14px;padding:22px 24px;display:flex;flex-direction:column;gap:6px}
+.wl h3{font-size:26px;color:var(--pine-2)}
+.wl p{margin:0;color:var(--muted)}
+/* contact */
+.contact{background:var(--pine);color:var(--sand)}
+.contact .in{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:32px;padding-block:56px}
+.contact h2{font-size:clamp(32px,4.4vw,46px)}
+.contact p{color:#cfd8d2;margin:12px 0 0;max-width:46ch}
+.who{display:flex;flex-direction:column;gap:14px}
+.who .row{display:flex;flex-direction:column;gap:2px;padding-bottom:12px;border-bottom:1px solid rgba(244,235,225,.14)}
+.who .row span{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#a9b8b1}
+.who .row b{font-size:18px;font-weight:500;user-select:all;overflow-wrap:anywhere}
+.who .row small{color:#a9b8b1;font-size:14px}
+footer{background:var(--pine);color:#7f918a;font-size:12px;padding-block:0 28px}
+@media (max-width:760px){
+  .prices{grid-template-columns:1fr}
+  .hero .in,.contact .in{grid-template-columns:1fr}
+  .jar{max-width:340px}
+  .lab{grid-template-columns:1fr 1fr}.lab .txt{grid-column:1/-1;order:-1}
+}
+</style>
+<style>html,body{margin:0;padding:0}img{max-width:100%}</style>
+</head>
+<body>
+
+<div class="hero"><div class="in">
+  <div>
+    <div class="eyebrow">Velkoobchodní nabídka pro e-shopy · CZ a SK</div>
+    <h1>Himálajský shilajit <em>do vašeho sortimentu</em></h1>
+    <p>Čistá shilajit pryskyřice z Himálaje s laboratorním rozborem každé šarže. Prodáváme ji sami na zenko.cz a teď ji nabízíme i dalším obchodům. Začít můžete od 10 kusů.</p>
+    <div class="facts">
+      <div><b>1 199 Kč</b><span>doporučená prodejní cena, dóza 30 g</span></div>
+      <div><b>od 10 ks</b><span>minimální odběr</span></div>
+      <div><b>až 63 %</b><span>vaše marže</span></div>
+    </div>
+    <a class="cta" href="#kontakt">Chci objednat ↓</a>
+  </div>
+  <div class="jar"><img src="img/shilajit-doza.jpg" alt="Dóza shilajit pryskyřice Zenforlife"></div>
+</div></div>
+
+<main>
+<section id="cenik"><div class="in">
+  <div class="head">
+    <div class="eyebrow">Ceník</div>
+    <h2>Čím víc kusů, tím nižší cena</h2>
+    <p>Cena za kus podle počtu kusů v jedné objednávce. Sloupec „Vaše marže“ je rozdíl proti doporučené prodejní ceně 1 199 Kč.</p>
+  </div>
+  <div class="prices">
+    <div class="card">
+      <header><h3>Shilajit 30 g</h3><div class="moc">Doporučená prodejní cena <b>1 199 Kč</b></div></header>
+      <div class="tw"><table>
+        <thead><tr><th>Množství</th><th>Cena / ks</th><th>Cena € / ks</th><th>Vaše marže</th></tr></thead>
+        <tbody>
+          <tr class="start"><td>10+ ks</td><td class="p">590 Kč</td><td class="e">24 €</td><td class="m">609 Kč · 51 %</td></tr>
+          <tr><td>30+ ks</td><td class="p">540 Kč</td><td class="e">22 €</td><td class="m">659 Kč · 55 %</td></tr>
+          <tr><td>50+ ks</td><td class="p">499 Kč</td><td class="e">20 €</td><td class="m">700 Kč · 58 %</td></tr>
+          <tr><td>100+ ks</td><td class="p">449 Kč</td><td class="e">18 €</td><td class="m">750 Kč · 63 %</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <aside class="calc">
+      <div class="eyebrow">Příklad pro 50 kusů</div>
+      <dl>
+        <div><dt>Nákup 50 × 499 Kč</dt><dd>24 950 Kč</dd></div>
+        <div><dt>Prodej 50 × 1 199 Kč</dt><dd>59 950 Kč</dd></div>
+        <div class="tot"><dt>Vaše marže</dt><dd>35 000 Kč</dd></div>
+      </dl>
+      <p>U prvních 10 kusů zaplatíte 5 900 Kč a při prodeji za doporučenou cenu vyděláte 6 090 Kč.</p>
+    </aside>
+  </div>
+  <p class="note">Zenforlife s.r.o. není plátcem DPH, uvedené ceny jsou konečné. Ceny v eurech platí pro slovenské odběratele. Doporučená prodejní cena je 1 199 Kč (48 €).</p>
+</div></section>
+
+<section><div class="in">
+  <div class="head">
+    <div class="eyebrow">Proč u vás bude prodávat</div>
+    <h2>Produkt, který už zákazníci znají a kupují</h2>
+  </div>
+  <div class="reasons">
+    <div><h3>Ověřený prodejem</h3><p>Shilajit prodáváme na vlastním e-shopu zenko.cz. Máme stovky spokojených zákazníků a recenze, které si můžete přečíst přímo na webu.</p></div>
+    <div><h3>Rozbor každé šarže</h3><p>Ke každé šarži je laboratorní protokol, včetně obsahu kyseliny fulvové a těžkých kovů. Můžete ho dát zákazníkům k produktu.</p></div>
+    <div><h3>Pravá pryskyřice</h3><p>Ne tablety ani prášek. Čistá himálajská pryskyřice, po které sahají zákazníci, kteří o shilajitu něco vědí.</p></div>
+    <div><h3>Podklady k prodeji</h3><p>Dodáme fotky produktu, popis do e-shopu a laboratorní protokoly, abyste mohli začít prodávat hned.</p></div>
+  </div>
+</div></section>
+
+<section><div class="in">
+  <div class="head">
+    <div class="eyebrow">Laboratorní rozbor · šarže 0926247</div>
+    <h2>Čistotu dokládáme papírem, ne slibem</h2>
+  </div>
+  <div class="lab">
+    <div class="txt">
+      <div class="big">77,84 %<small>kyseliny fulvové v šarži 0926247</small></div>
+      <div class="big">85<small>minerálů a stopových prvků</small></div>
+      <p style="margin:0;color:var(--muted)">Laboratorní protokoly vám pošleme v plném rozlišení spolu s nabídkou.</p>
+    </div>
+    <figure><img src="img/protokol-tezke-kovy.jpg" alt="Protokol o zkoušce – těžké kovy, šarže 0926247" loading="lazy"><figcaption>Protokol 1 – těžké kovy</figcaption></figure>
+    <figure><img src="img/protokol-kyselina-fulvova.jpg" alt="Protokol o zkoušce – kyselina fulvová, šarže 0926247" loading="lazy"><figcaption>Protokol 2 – kyselina fulvová</figcaption></figure>
+  </div>
+</div></section>
+
+<section><div class="in">
+  <div class="head">
+    <div class="eyebrow">Jak začít</div>
+    <h2>Objednávka bez složitostí</h2>
+  </div>
+  <ol class="steps">
+    <li><b>Napište nám</b><span>Pošlete, kolik kusů a jakou velikost chcete. Stačí e-mail nebo telefon.</span></li>
+    <li><b>Pošleme fakturu</b><span>Vystavíme fakturu podle ceníku a zdarma pošleme fotky, popis do e-shopu a protokoly.</span></li>
+    <li><b>Zboží odešleme</b><span>Po zaplacení zboží odešleme na vaši adresu v ČR nebo na Slovensku.</span></li>
+  </ol>
+  <div class="wl">
+    <h3>Chcete shilajit pod vlastní značkou?</h3>
+    <p>Dodáme stejnou pryskyřici 30 g s vaší etiketou. Od 300 ks 15 € za kus, od 500 ks 13,50 € a od 1 000 ks 11,50 €. Návrh etikety připravíme za jednorázový poplatek, od 500 ks zdarma. Platí se 50 % záloha při objednávce a doplatek před expedicí. K šarži dodáme laboratorní protokoly, notifikaci a texty na etiketě si zajišťuje odběratel. Pod vaší značkou umíme i kapsle, gummies, elektrolyty nebo kreatin.</p>
+  </div>
+</div></section>
+</main>
+
+<div class="contact" id="kontakt"><div class="in">
+  <div>
+    <div class="eyebrow" style="color:var(--amber)">Objednávky a kontakt</div>
+    <h2 style="margin-top:10px">Ozvěte se nám</h2>
+    <p>Rádi vám pošleme protokoly v plném rozlišení nebo připravíme nabídku na větší odběr.</p>
+  </div>
+  <div class="who">
+    <div class="row"><span>Kontaktní osoba</span><b>Zdeněk Matuška</b></div>
+    <div class="row"><span>E-mail</span><b>zdenek@zenforlife.cz</b></div>
+    <div class="row"><span>Telefon</span><b>+420 737 462 274</b></div>
+    <div class="row"><span>Fakturační údaje</span><b>Zenforlife s.r.o.</b><small>třída 1. máje 3414/11a, 690 02 Břeclav · IČ 19632461 · DIČ CZ19632461</small></div>
+  </div>
+</div></div>
+<footer><div class="in">Zenforlife s.r.o. · e-shop zenko.cz · Ceník platný od října 2026</div></footer>
+
+</body>
+</html>
