@@ -4,222 +4,390 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
-<meta name="description" content="Velkoobchodní nabídka himálajského shilajitu 30 g pro e-shopy v ČR a na Slovensku. Ceník od 10 kusů, laboratorní rozbor šarže.">
-<title>Shilajit pro váš e-shop</title>
+<meta name="description" content="Velkoobchodní nabídka himálajského shilajitu 30 g pro e-shopy v ČR a na Slovensku. Od 10 kusů za 590 Kč, doporučená prodejní cena 1 199 Kč.">
+<meta name="theme-color" content="#D9962B">
+<title>Shilajit pro váš e-shop · Zenko</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Roboto:wght@400;500;700&display=swap">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700&family=Martian+Mono:wght@400;600&display=swap">
 <style>
-/* Layout: obchodní nabídka – tmavý horský úvod s dózou, pak ceník jako hlavní obsah, důvody, rozbor a kontakt */
 :root{
-  --pine:#16231f; --pine-2:#1f322c; --sand:#f4ebe1; --paper:#fbf7f1; --ink:#1d2b28; --muted:#5b6a66; --line:#e2d6c6;
-  --amber:#e0952f; --amber-deep:#9a5c12; --ok:#2f6f4c;
-  --f-display:"Cormorant Garamond",Georgia,serif; --f-body:Roboto,system-ui,-apple-system,sans-serif;
+  --lokta:#D9962B;
+  --lokta-shade:#C9861F;
+  --lokta-light:#E6AC4C;
+  --resin:#17120E;
+  --resin-soft:#3A2A17;
+  --seal:#A82A18;
+  --print:#F7E9C9;
+  --f-slab:"Alfa Slab One","Rockwell","Roboto Slab",Georgia,serif;
+  --f-text:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --f-form:"Martian Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  --gut:clamp(16px,4vw,48px);
+  --rule:2px solid var(--resin);
+  --hair:1px solid var(--resin);
   color-scheme:light;
 }
 *{box-sizing:border-box}
-body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6}
-.in{max-width:1080px;margin:0 auto;padding-inline:20px}
-h1,h2,h3{font-family:var(--f-display);font-weight:600;line-height:1.08;text-wrap:balance;margin:0}
-.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500}
-/* hero */
-.hero{background:var(--pine);color:var(--sand)}
-.hero .in{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:32px;align-items:center;padding-block:56px 48px}
-.hero .eyebrow{color:var(--amber)}
-.hero h1{font-size:clamp(40px,6.4vw,68px);margin-top:12px}
-.hero h1 em{font-style:italic;color:var(--amber);font-weight:500}
-.hero p{color:#cfd8d2;max-width:52ch;margin:18px 0 0}
-.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:28px;padding-top:22px;border-top:1px solid rgba(244,235,225,.16)}
-.facts div{display:flex;flex-direction:column}
-.facts b{font-family:var(--f-display);font-size:30px;font-weight:600;color:var(--sand);font-variant-numeric:tabular-nums;line-height:1.1}
-.facts span{font-size:13px;color:#a9b8b1}
-.jar{border-radius:14px;overflow:hidden;aspect-ratio:1;max-width:100%;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
-.jar img{display:block;width:100%;height:100%;object-fit:cover}
-.cta{display:inline-flex;align-items:center;gap:8px;margin-top:26px;background:var(--amber);color:var(--pine);font-weight:700;text-decoration:none;padding:12px 20px;border-radius:8px}
-.cta:hover{background:#eaa548}
-.cta:focus-visible,a:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
-/* sections */
-section{padding-block:56px}
-section+section{border-top:1px solid var(--line)}
-.head{display:flex;flex-direction:column;gap:8px;margin-bottom:28px;max-width:64ch}
-.head .eyebrow{color:var(--amber-deep)}
-.head h2{font-size:clamp(32px,4.4vw,46px);color:var(--pine-2)}
-.head p{margin:0;color:var(--muted)}
-/* price */
-.prices{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:24px;align-items:start}
-.calc{background:var(--pine);color:var(--sand);border-radius:14px;padding:22px 24px;display:flex;flex-direction:column;gap:14px}
-.calc .eyebrow{color:var(--amber)}
-.calc dl{margin:0;display:flex;flex-direction:column}
-.calc dl div{display:flex;justify-content:space-between;gap:12px;padding-block:10px;border-bottom:1px solid rgba(244,235,225,.14);font-variant-numeric:tabular-nums}
-.calc dt{color:#cfd8d2}.calc dd{margin:0;font-weight:500}
-.calc .tot{border-bottom:0}.calc .tot dt{color:var(--sand);font-weight:700}.calc .tot dd{font-family:var(--f-display);font-size:30px;font-weight:600;color:var(--amber);line-height:1}
-.calc p{margin:0;font-size:14px;color:#a9b8b1}
-.card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
-.card header{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;padding:20px 22px 14px}
-.card h3{font-size:30px;color:var(--pine-2)}
-.moc{font-size:13px;color:var(--muted)} .moc b{color:var(--ink);font-size:16px}
-.tw{overflow-x:auto}
-table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:15px}
-th{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500;text-align:right;padding:8px 22px 8px 8px;border-top:1px solid var(--line);background:var(--sand)}
-th:first-child,td:first-child{text-align:left;padding-left:22px}
-td{text-align:right;padding:11px 22px 11px 8px;border-top:1px solid var(--line);white-space:nowrap}
-td.p{font-weight:700}
-td.m{color:var(--ok);font-weight:500}
-td.e{color:var(--muted)}
-tr.start td{background:#fdf3e4}
-tr.start td:first-child::after{content:"start";margin-left:8px;font-size:10px;letter-spacing:.08em;text-transform:uppercase;background:var(--amber);color:var(--pine);padding:2px 6px;border-radius:4px;vertical-align:2px}
-.note{font-size:14px;color:var(--muted);margin-top:16px;max-width:80ch}
-/* reasons */
-.reasons{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:28px 32px}
-.reasons div{display:flex;flex-direction:column;gap:6px;padding-top:16px;border-top:2px solid var(--amber)}
-.reasons h3{font-size:24px;color:var(--pine-2)}
-.reasons p{margin:0;color:var(--muted);font-size:15px}
-/* lab */
-.lab{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.1fr);gap:24px;align-items:start}
-.lab figure{margin:0;display:flex;flex-direction:column;gap:8px}
-.lab img{border:1px solid var(--line);border-radius:8px;background:#fff;width:100%}
-.lab figcaption{font-size:13px;color:var(--muted)}
-.lab .txt{display:flex;flex-direction:column;gap:14px}
-.big{font-family:var(--f-display);font-size:64px;line-height:1;color:var(--pine-2);font-weight:600}
-.big small{font-size:22px;color:var(--muted);font-family:var(--f-body);font-weight:400;display:block;margin-top:6px}
-/* steps */
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:20px;counter-reset:s;list-style:none;padding:0;margin:0}
-.steps li{counter-increment:s;display:flex;flex-direction:column;gap:6px}
-.steps li::before{content:counter(s);font-family:var(--f-display);font-size:40px;color:var(--amber);line-height:1}
-.steps b{font-size:17px}
-.steps span{color:var(--muted);font-size:15px}
-.wl{margin-top:36px;background:var(--sand);border-radius:14px;padding:22px 24px;display:flex;flex-direction:column;gap:6px}
-.wl h3{font-size:26px;color:var(--pine-2)}
-.wl p{margin:0;color:var(--muted)}
-/* contact */
-.contact{background:var(--pine);color:var(--sand)}
-.contact .in{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:32px;padding-block:56px}
-.contact h2{font-size:clamp(32px,4.4vw,46px)}
-.contact p{color:#cfd8d2;margin:12px 0 0;max-width:46ch}
-.who{display:flex;flex-direction:column;gap:14px}
-.who .row{display:flex;flex-direction:column;gap:2px;padding-bottom:12px;border-bottom:1px solid rgba(244,235,225,.14)}
-.who .row span{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#a9b8b1}
-.who .row b{font-size:18px;font-weight:500;user-select:all;overflow-wrap:anywhere}
-.who .row small{color:#a9b8b1;font-size:14px}
-footer{background:var(--pine);color:#7f918a;font-size:12px;padding-block:0 28px}
-@media (max-width:760px){
-  .prices{grid-template-columns:1fr}
-  .hero .in,.contact .in{grid-template-columns:1fr}
-  .jar{max-width:340px}
-  .lab{grid-template-columns:1fr 1fr}.lab .txt{grid-column:1/-1;order:-1}
+html{-webkit-text-size-adjust:100%;scrollbar-color:var(--resin) var(--lokta-shade)}
+body{
+  margin:0;color:var(--resin);background-color:var(--lokta);
+  font:400 17px/1.55 var(--f-text);
 }
+::selection{background:var(--resin);color:var(--lokta)}
+a{color:inherit;text-decoration-thickness:2px;text-underline-offset:.18em}
+a:focus-visible,button:focus-visible,input:focus-visible,tr:focus-visible{outline:3px solid var(--seal);outline-offset:3px}
+img{max-width:100%;height:auto;display:block}
+
+.sheet{max-width:1240px;margin:0 auto;padding-inline:var(--gut);padding-block:clamp(14px,3vw,28px) clamp(40px,5vw,64px)}
+
+.head{display:grid;grid-template-columns:auto 1fr 1fr 1.3fr;border-top:var(--rule);border-bottom:var(--hair)}
+.head > div{padding:10px 14px 9px;border-left:var(--hair);display:flex;flex-direction:column;gap:2px;min-width:0}
+.head > div:first-child{border-left:0;padding-left:0;justify-content:center}
+.field{font:600 11.5px/1.25 var(--f-form);letter-spacing:.08em;text-transform:uppercase;color:var(--resin-soft)}
+.val{font:400 14px/1.35 var(--f-form);overflow-wrap:anywhere}
+.mark{font:400 26px/1 var(--f-slab);letter-spacing:.01em}
+.blank{display:block;height:1.1em;border-bottom:1px dashed var(--resin);margin-top:2px}
+
+.lead{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:clamp(20px,4vw,56px);padding-block:clamp(28px,5vw,64px) clamp(44px,5vw,64px);border-bottom:var(--rule);align-items:start}
+h1{font:400 clamp(42px,7.2vw,100px)/.95 var(--f-slab);letter-spacing:-.015em;margin:0}
+h1 > span{display:block}
+h1 > span + span{margin-top:.12em}
+h1 .num{white-space:nowrap}
+.sub{font-size:clamp(17px,1.6vw,20px);max-width:52ch;margin:clamp(18px,2.4vw,28px) 0 0;color:var(--resin-soft)}
+.sub b{color:var(--resin);font-weight:700}
+
+.order{margin-top:clamp(24px,3vw,36px);display:flex;flex-wrap:wrap;border:var(--rule);max-width:620px;background:rgba(230,172,76,.35)}
+.order .slot{padding:12px 18px;display:flex;flex-direction:column;justify-content:center;gap:4px;flex:1 1 200px;min-width:0}
+.btn{appearance:none;border:0;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:12px;background:var(--resin);color:var(--lokta);font:400 19px/1.1 var(--f-slab);letter-spacing:.02em;padding:18px 24px;text-decoration:none;min-height:58px;transition:background .2s,color .2s}
+.order .btn{flex:1 1 260px}
+.btn:hover{background:var(--resin-soft);color:var(--print)}
+.btn svg{flex:none}
+.tel{font:600 17px/1.2 var(--f-form);text-decoration:none;white-space:nowrap}
+.tel:hover{text-decoration:underline}
+
+.photo{position:relative;margin:clamp(4px,1vw,14px) 0 0;justify-self:end;width:100%;max-width:440px}
+.photo .print{background:var(--print);padding:10px 10px 40px;box-shadow:0 1px 0 rgba(23,18,14,.25),0 14px 28px -14px rgba(60,30,0,.55);transform:rotate(1.6deg)}
+.photo img{aspect-ratio:4/3;object-fit:cover;width:100%;filter:saturate(.92) contrast(1.04)}
+.photo figcaption{position:absolute;left:22px;bottom:14px;transform:rotate(1.6deg);font:400 12px/1.2 var(--f-form);color:var(--resin-soft)}
+.seal{position:absolute;right:-14px;bottom:-40px;width:150px;height:150px;color:var(--seal);transform:rotate(-14deg)}
+.seal text{font:600 11px var(--f-form);letter-spacing:.1em;fill:currentColor}
+.seal .c{font:400 30px var(--f-slab);letter-spacing:0}
+.seal .s{font:600 9px var(--f-form);letter-spacing:.14em}
+
+.part{display:grid;grid-template-columns:minmax(150px,230px) minmax(0,1fr);gap:clamp(16px,3vw,44px);padding-block:clamp(40px,5vw,68px) clamp(36px,4.5vw,60px);border-bottom:var(--hair)}
+.part > h2{font:400 clamp(26px,2.6vw,34px)/1.04 var(--f-slab);margin:0;text-wrap:balance}
+.part > h2 small{display:block;font:600 11px/1.45 var(--f-form);letter-spacing:.06em;text-transform:uppercase;margin-top:12px;color:var(--resin-soft)}
+.part p{margin:0;max-width:64ch}
+main > .part:last-child{border-bottom:0}
+
+.tw{overflow-x:auto}
+.manifest{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.manifest th{font:600 11.5px/1.25 var(--f-form);letter-spacing:.08em;text-transform:uppercase;text-align:right;padding:0 12px 10px;color:var(--resin-soft);border-bottom:var(--rule);white-space:nowrap}
+.manifest th:first-child,.manifest td:first-child{text-align:left;padding-left:2px}
+.manifest td{padding:17px 12px;border-bottom:var(--hair);text-align:right;white-space:nowrap}
+.manifest td.q{position:static}
+.manifest tbody tr{transform:translateZ(0)}
+.manifest td.q{font:400 22px/1 var(--f-slab)}
+.manifest td.p{font:400 27px/1 var(--f-slab)}
+.manifest td.e{font:400 14px var(--f-form);color:var(--resin-soft)}
+.manifest .eu{display:none;font:400 12px var(--f-form);color:var(--resin-soft);margin-top:6px}
+.manifest td.m{font:600 15px var(--f-form)}
+.manifest td.m span.pc{font-weight:400;color:var(--resin-soft)}
+.manifest tbody tr{cursor:pointer;transition:background .25s;position:relative}
+.manifest tbody tr:hover{background:rgba(230,172,76,.45)}
+.manifest tbody tr.on{background:rgba(230,172,76,.65)}
+.stamp{position:absolute;left:68.5%;top:50%;transform:translate(-50%,-50%) rotate(-7deg);font:400 19px/1 var(--f-slab);letter-spacing:.06em;text-transform:uppercase;color:var(--seal);border:4px double var(--seal);padding:8px 14px 6px;opacity:0;pointer-events:none;white-space:nowrap;mix-blend-mode:multiply}
+tr.on .stamp{opacity:.95}
+tr.on .stamp.press{animation:press .45s cubic-bezier(.16,1,.3,1)}
+@keyframes press{0%{opacity:0;transform:translate(-50%,-50%) rotate(-7deg) scale(1.8)}60%{opacity:1}100%{opacity:.95;transform:translate(-50%,-50%) rotate(-7deg) scale(1)}}
+
+.calc{margin-top:28px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:20px 32px;align-items:end;border:var(--rule);padding:18px 20px 20px;background:rgba(230,172,76,.32)}
+.qty-l{font:600 11.5px/1.25 var(--f-form);letter-spacing:.08em;text-transform:uppercase;color:var(--resin-soft);margin-bottom:8px;display:block}
+.qty{display:flex;align-items:stretch;border:var(--rule);height:54px;width:max-content}
+.qty button{appearance:none;border:0;background:transparent;width:50px;font:400 26px/1 var(--f-slab);color:var(--resin);cursor:pointer;transition:background .15s,color .15s}
+.qty button:hover{background:var(--resin);color:var(--lokta)}
+.qty input{width:86px;border:0;border-left:var(--hair);border-right:var(--hair);background:transparent;text-align:center;font:400 23px/1 var(--f-slab);color:var(--resin);-moz-appearance:textfield;appearance:textfield;caret-color:var(--seal)}
+.qty input::-webkit-outer-spin-button,.qty input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.sum{display:flex;flex-wrap:wrap;gap:12px 32px;margin:0;font-variant-numeric:tabular-nums}
+.sum div{display:flex;flex-direction:column;gap:4px}
+.sum dt{font:600 11.5px/1.25 var(--f-form);letter-spacing:.08em;text-transform:uppercase;color:var(--resin-soft)}
+.sum dd{margin:0;font:400 24px/1.1 var(--f-slab)}
+.sum .gain dd{font-size:36px}
+.note{font-size:14.5px;color:var(--resin-soft);margin-top:18px !important}
+
+.lines{list-style:none;margin:0;padding:0;border-top:var(--rule)}
+.lines li{display:flex;align-items:baseline;gap:14px;padding:16px 0;border-bottom:var(--hair)}
+.lines .n{font:600 13px var(--f-form);min-width:2.2em}
+.lines .t{font-weight:500;font-size:19px}
+.lines .dots{flex:1;border-bottom:2px dotted var(--resin-soft);transform:translateY(-4px);min-width:24px}
+.lines .r{font:400 14px var(--f-form);color:var(--resin-soft);text-align:right}
+
+.lab{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr) minmax(0,1fr);gap:clamp(18px,2.5vw,34px);align-items:start}
+.excerpt{width:100%;border-collapse:collapse;border-top:var(--rule);font-variant-numeric:tabular-nums}
+.excerpt th{font:600 11.5px/1.25 var(--f-form);letter-spacing:.08em;text-transform:uppercase;text-align:left;padding:10px 10px 8px 0;color:var(--resin-soft);border-bottom:var(--hair)}
+.excerpt td{padding:14px 10px 14px 0;border-bottom:var(--hair);font-size:17px;vertical-align:baseline}
+.excerpt td:last-child,.excerpt th:last-child{text-align:right;padding-right:0;font-family:var(--f-form)}
+.excerpt .res{font:400 clamp(30px,3.4vw,44px)/1 var(--f-slab);white-space:nowrap}
+.excerpt .res.sm{font:600 14px var(--f-form)}
+.big{font:400 clamp(48px,5.4vw,80px)/.9 var(--f-slab);letter-spacing:-.02em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.cap{font:600 11px/1.4 var(--f-form);letter-spacing:.08em;text-transform:uppercase;margin-top:10px;color:var(--resin-soft)}
+.facts{display:flex;flex-direction:column;gap:18px}
+.att{margin:0}
+.att a{display:block}
+.att img{background:#fff;box-shadow:0 1px 0 rgba(23,18,14,.3),0 12px 22px -14px rgba(60,30,0,.6);transition:transform .3s cubic-bezier(.16,1,.3,1)}
+.att:nth-child(2) img{transform:rotate(-1.2deg)}
+.att:nth-child(3) img{transform:rotate(1deg)}
+.att a:hover img{transform:rotate(0) translateY(-4px)}
+.att figcaption{font:400 12px/1.4 var(--f-form);margin-top:14px;color:var(--resin-soft)}
+
+.score{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin-bottom:20px}
+.score b{font:400 46px/1 var(--f-slab)}
+.score span{font:400 14px var(--f-form);color:var(--resin-soft)}
+.rev{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:var(--rule)}
+.rev blockquote{margin:0;padding:20px 22px 8px;border-left:var(--hair)}
+.rev blockquote:first-child{border-left:0;padding-left:0}
+.rev p{font-size:19px;line-height:1.45;font-weight:500}
+.rev cite{display:block;font:400 12px var(--f-form);font-style:normal;margin-top:14px;color:var(--resin-soft)}
+
+.wl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:var(--rule);margin-top:24px}
+.wl div{padding:16px 18px 18px;border-left:var(--hair)}
+.wl div:first-child{border-left:0}
+.wl b{display:block;font:400 32px/1 var(--f-slab);margin-top:8px}
+.wl .field{display:block}
+
+.closing{max-width:1240px;margin:0 auto;padding-inline:var(--gut)}
+.sign{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(28px,4vw,56px);padding-block:clamp(40px,5vw,64px);border-top:var(--rule)}
+.sign h2{font:400 clamp(34px,4.6vw,60px)/.98 var(--f-slab);margin:0;text-wrap:balance}
+.sign p{margin:18px 0 0;max-width:46ch;color:var(--resin-soft)}
+.sign .order{margin-top:28px}
+.sign dl{margin:0;display:flex;flex-direction:column;border-top:var(--hair)}
+.sign dl div{padding:13px 0;border-bottom:var(--hair);display:flex;flex-direction:column;gap:4px}
+.sign dt{font:600 11.5px/1.25 var(--f-form);letter-spacing:.08em;text-transform:uppercase;color:var(--resin-soft)}
+.sign dd{margin:0;font:400 15.5px/1.45 var(--f-form);overflow-wrap:anywhere}
+.sign dd a{text-decoration:none}
+.sign dd a:hover{text-decoration:underline}
+.signature{margin-top:56px;max-width:320px}
+.signature .ln{border-top:var(--hair);padding-top:8px;font:400 12px var(--f-form);color:var(--resin-soft)}
+.foot{font:400 12px/1.5 var(--f-form);color:var(--resin-soft);border-top:var(--hair);padding-block:14px 28px}
+@media (max-width:900px){
+  .head{grid-template-columns:1fr 1fr}
+  .head > div:nth-child(3){border-left:0;padding-left:0}
+  .head > div:nth-child(n+3){border-top:var(--hair)}
+  .lead{grid-template-columns:1fr}
+  .photo{justify-self:start;max-width:420px;margin:6px 0 30px}
+  .part{grid-template-columns:1fr}
+  .lab{grid-template-columns:1fr 1fr}.lab .facts{grid-column:1/-1}
+  .rev{grid-template-columns:1fr}
+  .rev blockquote,.rev blockquote:first-child{border-left:0;border-bottom:var(--hair);padding:18px 0 10px}
+  .sign{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  .head .val{font-size:12.5px}
+  .seal{width:116px;height:116px;right:-4px;bottom:-34px}
+  .order .btn{flex-basis:100%}
+  .calc{grid-template-columns:1fr}
+  .manifest td{padding:15px 8px}
+  .manifest td.p{font-size:22px}.manifest td.q{font-size:18px}
+  .manifest th:nth-child(3),.manifest td.e{display:none}
+  .manifest td.p .eu{display:block}
+  .manifest td.m{padding-right:2px}
+  .manifest .pc,.manifest .lg{display:none}
+  .manifest th{padding-inline:6px}
+  .manifest td{padding-top:36px}
+  .stamp{font-size:14px;padding:5px 9px 3px;border-width:3px;left:48%;top:18px}
+  .wl{grid-template-columns:1fr}
+  .wl div{border-left:0;border-top:var(--hair)}
+  .wl div:first-child{border-top:0}
+  .lines li{flex-wrap:wrap;row-gap:2px}
+  .lines .dots{display:none}
+  .lines .r{flex-basis:100%;text-align:left;padding-left:calc(2.2em + 14px)}
+  .lab{grid-template-columns:1fr 1fr;gap:14px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}tr.on .stamp.press{animation:none}}
 </style>
-<style>html,body{margin:0;padding:0}img{max-width:100%}</style>
 </head>
 <body>
 
-<div class="hero"><div class="in">
-  <div>
-    <div class="eyebrow">Velkoobchodní nabídka pro e-shopy · CZ a SK</div>
-    <h1>Himálajský shilajit <em>do vašeho sortimentu</em></h1>
-    <p>Čistá shilajit pryskyřice z Himálaje s laboratorním rozborem každé šarže. Prodáváme ji sami na zenko.cz a teď ji nabízíme i dalším obchodům. Začít můžete od 10 kusů.</p>
-    <div class="facts">
-      <div><b>1 199 Kč</b><span>doporučená prodejní cena, dóza 30 g</span></div>
-      <div><b>od 10 ks</b><span>minimální odběr</span></div>
-      <div><b>až 63 %</b><span>vaše marže</span></div>
-    </div>
-    <a class="cta" href="#kontakt">Chci objednat ↓</a>
-  </div>
-  <div class="jar"><img src="img/shilajit-doza.jpg" alt="Dóza shilajit pryskyřice Zenforlife"></div>
-</div></div>
+<div class="sheet">
+  <header class="head">
+    <div><span class="mark">Zenko</span></div>
+    <div><span class="field">Průvodní list</span><span class="val">Šarže 0926247</span></div>
+    <div><span class="field">Odesílatel</span><span class="val">Zenforlife s.r.o., Břeclav</span></div>
+    <div><span class="field">Příjemce</span><span class="val">váš e-shop, ČR a SK</span><span class="blank" aria-hidden="true"></span></div>
+  </header>
 
-<main>
-<section id="cenik"><div class="in">
-  <div class="head">
-    <div class="eyebrow">Ceník</div>
-    <h2>Čím víc kusů, tím nižší cena</h2>
-    <p>Cena za kus podle počtu kusů v jedné objednávce. Sloupec „Vaše marže“ je rozdíl proti doporučené prodejní ceně 1 199 Kč.</p>
-  </div>
-  <div class="prices">
-    <div class="card">
-      <header><h3>Shilajit 30 g</h3><div class="moc">Doporučená prodejní cena <b>1 199 Kč</b></div></header>
-      <div class="tw"><table>
-        <thead><tr><th>Množství</th><th>Cena / ks</th><th>Cena € / ks</th><th>Vaše marže</th></tr></thead>
+  <main>
+  <section class="lead" aria-labelledby="t">
+    <div>
+      <h1 id="t"><span>Kupujete za <span class="num">590 Kč.</span></span><span>Prodáváte za <span class="num">1 199 Kč.</span></span></h1>
+      <p class="sub">Čistá himálajská shilajit pryskyřice v dóze 30 g, s laboratorním rozborem každé šarže. Sami ji prodáváme na zenko.cz. Vám ji dodáme <b>od 10 kusů</b> a na každém vyděláte <b>přes 600 Kč</b>.</p>
+      <div class="order">
+        <a class="btn" href="mailto:zdenek@zenforlife.cz?subject=Objedn%C3%A1vka%20Shilajit%2030%20g%20%E2%80%93%2010%20ks">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 6h18v12H3z"/><path d="m3 7 9 6 9-6"/></svg>
+          Objednat 10 ks e-mailem
+        </a>
+        <div class="slot"><span class="field">Nebo zavolejte</span><a class="tel" href="tel:+420737462274">+420 737 462 274</a></div>
+      </div>
+    </div>
+    <figure class="photo">
+      <div class="print"><img src="img/shilajit-otevrena-doza.webp" width="1000" height="750" alt="Otevřená dóza shilajitu s černou pryskyřicí v trávě" fetchpriority="high"></div>
+            <figcaption>Dóza 30 g, pryskyřice</figcaption>
+      <svg class="seal" viewBox="0 0 150 150" role="img" aria-label="Pečeť: šarže 0926247, laboratorně testováno">
+        <defs><path id="ring" d="M75 75 m-56 0 a56 56 0 1 1 112 0 a56 56 0 1 1 -112 0"/></defs>
+        <circle cx="75" cy="75" r="71" fill="none" stroke="currentColor" stroke-width="3"/>
+        <circle cx="75" cy="75" r="43" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <text><textPath href="#ring">LABORATORNĚ TESTOVÁNO · ŠARŽE 0926247 ·</textPath></text>
+        <text class="c" x="75" y="82" text-anchor="middle">30 g</text>
+        <text class="s" x="75" y="98" text-anchor="middle">HIMÁLAJ</text>
+      </svg>
+    </figure>
+  </section>
+
+  <section class="part" id="cenik" aria-labelledby="h-cenik">
+    <h2 id="h-cenik">Rozpis zásilky<small>Cena za kus podle počtu v jedné objednávce</small></h2>
+    <div>
+      <div class="tw">
+      <table class="manifest" id="tiers">
+        <thead><tr><th scope="col">Množství</th><th scope="col">Cena / ks</th><th scope="col">Pro SK</th><th scope="col">Vaše marže<span class="lg"> při 1 199 Kč</span></th></tr></thead>
         <tbody>
-          <tr class="start"><td>10+ ks</td><td class="p">590 Kč</td><td class="e">24 €</td><td class="m">609 Kč · 51 %</td></tr>
-          <tr><td>30+ ks</td><td class="p">540 Kč</td><td class="e">22 €</td><td class="m">659 Kč · 55 %</td></tr>
-          <tr><td>50+ ks</td><td class="p">499 Kč</td><td class="e">20 €</td><td class="m">700 Kč · 58 %</td></tr>
-          <tr><td>100+ ks</td><td class="p">449 Kč</td><td class="e">18 €</td><td class="m">750 Kč · 63 %</td></tr>
+          <tr data-min="10" data-p="590" class="on"><td class="q">10+ ks<span class="stamp" aria-hidden="true">Vaše pásmo</span></td><td class="p">590 Kč<span class="eu">24 €</span></td><td class="e">24 €</td><td class="m">609 Kč <span class="pc">· 51 %</span></td></tr>
+          <tr data-min="30" data-p="540"><td class="q">30+ ks<span class="stamp" aria-hidden="true">Vaše pásmo</span></td><td class="p">540 Kč<span class="eu">22 €</span></td><td class="e">22 €</td><td class="m">659 Kč <span class="pc">· 55 %</span></td></tr>
+          <tr data-min="50" data-p="499"><td class="q">50+ ks<span class="stamp" aria-hidden="true">Vaše pásmo</span></td><td class="p">499 Kč<span class="eu">20 €</span></td><td class="e">20 €</td><td class="m">700 Kč <span class="pc">· 58 %</span></td></tr>
+          <tr data-min="100" data-p="449"><td class="q">100+ ks<span class="stamp" aria-hidden="true">Vaše pásmo</span></td><td class="p">449 Kč<span class="eu">18 €</span></td><td class="e">18 €</td><td class="m">750 Kč <span class="pc">· 63 %</span></td></tr>
         </tbody>
-      </table></div>
+      </table>
+      </div>
+
+      <div class="calc">
+        <div>
+          <label class="qty-l" for="qty">Kolik kusů?</label>
+          <div class="qty">
+            <button type="button" id="minus" aria-label="Ubrat 10 kusů">−</button>
+            <input id="qty" type="number" inputmode="numeric" min="10" step="1" value="10">
+            <button type="button" id="plus" aria-label="Přidat 10 kusů">+</button>
+          </div>
+        </div>
+        <dl class="sum" aria-live="polite">
+          <div><dt>Zaplatíte</dt><dd id="s-buy">5 900 Kč</dd></div>
+          <div><dt>Utržíte při 1 199 Kč</dt><dd id="s-sell">11 990 Kč</dd></div>
+          <div class="gain"><dt>Vaše marže</dt><dd id="s-gain">6 090 Kč</dd></div>
+        </dl>
+      </div>
+      <p class="note">Doporučená prodejní cena je 1 199 Kč (48 €), konečnou cenu si určujete sami. Zenforlife s.r.o. není plátcem DPH, uvedené ceny jsou konečné. Ceny v eurech platí pro slovenské obchody.</p>
     </div>
-    <aside class="calc">
-      <div class="eyebrow">Příklad pro 50 kusů</div>
+  </section>
+
+  <section class="part" aria-labelledby="h-obsah">
+    <h2 id="h-obsah">Co v zásilce dostanete</h2>
+    <ol class="lines">
+      <li><span class="n">01</span><span class="t">Dózy shilajitu 30 g</span><span class="dots" aria-hidden="true"></span><span class="r">pravá pryskyřice, ne tablety</span></li>
+      <li><span class="n">02</span><span class="t">Laboratorní protokoly šarže</span><span class="dots" aria-hidden="true"></span><span class="r">pro vás i zákazníky</span></li>
+      <li><span class="n">03</span><span class="t">Fotky produktu</span><span class="dots" aria-hidden="true"></span><span class="r">zdarma</span></li>
+      <li><span class="n">04</span><span class="t">Popis do e-shopu</span><span class="dots" aria-hidden="true"></span><span class="r">zdarma</span></li>
+    </ol>
+  </section>
+
+  <section class="part" aria-labelledby="h-rozbor">
+    <h2 id="h-rozbor">Rozbor šarže 0926247<small>Přílohy k listu</small></h2>
+    <div class="lab">
+      <div class="facts">
+        <table class="excerpt">
+          <thead><tr><th scope="col">Parametr</th><th scope="col">Výsledek</th><th scope="col">Příloha</th></tr></thead>
+          <tbody>
+            <tr><td>Kyselina fulvová</td><td class="res">77,84 %</td><td>2</td></tr>
+            <tr><td>Těžké kovy</td><td class="res sm">viz protokol</td><td>1</td></tr>
+          </tbody>
+        </table>
+        <p class="cap">Laboratoř: Eurofins Analytical Services India · šarže 0926247</p>
+        <p>Protokoly v plném rozlišení pošleme s nabídkou. Můžete je dát přímo k produktu ve svém e-shopu.</p>
+      </div>
+      <figure class="att"><a href="img/protokol-tezke-kovy.jpg" target="_blank" rel="noopener"><img src="img/protokol-tezke-kovy.jpg" width="700" height="990" loading="lazy" alt="Protokol o zkoušce šarže 0926247, těžké kovy"></a><figcaption>Příloha 1 · těžké kovy · Eurofins</figcaption></figure>
+      <figure class="att"><a href="img/protokol-kyselina-fulvova.jpg" target="_blank" rel="noopener"><img src="img/protokol-kyselina-fulvova.jpg" width="700" height="990" loading="lazy" alt="Protokol o zkoušce šarže 0926247, kyselina fulvová"></a><figcaption>Příloha 2 · kyselina fulvová · Eurofins</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="part" aria-labelledby="h-rec">
+    <h2 id="h-rec">Co píšou zákazníci na zenko.cz</h2>
+    <div>
+      <div class="score"><b>5 z 5</b><span>12 ověřených recenzí na zenko.cz</span></div>
+      <div class="rev">
+        <blockquote><p>„Kupuji už páté balení. Většinou ho kupuji i známým k narozeninám jako dárek.“</p><cite>Lukáš M. · ověřená recenze, zenko.cz</cite></blockquote>
+        <blockquote><p>„Jsem spokojená jak s kvalitou, tak s velmi pěkným balením. Můžu doporučit.“</p><cite>Helena S. · ověřená recenze, zenko.cz</cite></blockquote>
+        <blockquote><p>„Užívám pravidelně každé ráno a vydrží mi přes 2 měsíce. Skvělý shilajit.“</p><cite>Martin U. · ověřená recenze, zenko.cz</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="part" aria-labelledby="h-wl">
+    <h2 id="h-wl">Pod vaší vlastní značkou</h2>
+    <div>
+      <p>Stejnou pryskyřici 30 g dodáme s vaší etiketou. Návrh etikety připravíme za jednorázový poplatek, od 500 kusů zdarma. Platí se 50 % záloha při objednávce a doplatek před expedicí. K šarži dodáme laboratorní protokoly, notifikaci a texty na etiketě si zajišťujete vy. Pod vaší značkou umíme i kapsle, gummies, elektrolyty nebo kreatin.</p>
+      <div class="wl">
+        <div><span class="field">od 300 ks</span><b>15 €</b></div>
+        <div><span class="field">od 500 ks</span><b>13,50 €</b></div>
+        <div><span class="field">od 1 000 ks</span><b>11,50 €</b></div>
+      </div>
+    </div>
+  </section>
+  </main>
+</div>
+
+  <footer class="closing">
+    <section class="sign" id="kontakt" aria-labelledby="h-sign">
+      <div>
+        <h2 id="h-sign">Napište, kolik kusů chcete. Pošleme fakturu.</h2>
+        <p>Po zaplacení zboží odešleme na vaši adresu v ČR nebo na Slovensku, spolu s fotkami, popisem a protokoly.</p>
+        <div class="order">
+          <a class="btn" id="cta-bottom" href="mailto:zdenek@zenforlife.cz?subject=Objedn%C3%A1vka%20Shilajit%2030%20g%20%E2%80%93%2010%20ks">Objednat 10 ks e-mailem</a>
+          <div class="slot"><span class="field">Nebo zavolejte</span><a class="tel" href="tel:+420737462274">+420 737 462 274</a></div>
+        </div>
+        <div class="signature"><div class="ln">Zdeněk Matuška, za odesílatele</div></div>
+      </div>
       <dl>
-        <div><dt>Nákup 50 × 499 Kč</dt><dd>24 950 Kč</dd></div>
-        <div><dt>Prodej 50 × 1 199 Kč</dt><dd>59 950 Kč</dd></div>
-        <div class="tot"><dt>Vaše marže</dt><dd>35 000 Kč</dd></div>
+        <div><dt>E-mail</dt><dd><a href="mailto:zdenek@zenforlife.cz">zdenek@zenforlife.cz</a></dd></div>
+        <div><dt>Telefon</dt><dd><a href="tel:+420737462274">+420 737 462 274</a></dd></div>
+        <div><dt>Fakturační údaje</dt><dd>Zenforlife s.r.o., třída 1. máje 3414/11a, 690 02 Břeclav<br>IČ 19632461 · DIČ CZ19632461</dd></div>
+        <div><dt>E-shop</dt><dd><a href="https://www.zenko.cz/p/shilajit" target="_blank" rel="noopener">zenko.cz/p/shilajit</a></dd></div>
       </dl>
-      <p>U prvních 10 kusů zaplatíte 5 900 Kč a při prodeji za doporučenou cenu vyděláte 6 090 Kč.</p>
-    </aside>
-  </div>
-  <p class="note">Zenforlife s.r.o. není plátcem DPH, uvedené ceny jsou konečné. Ceny v eurech platí pro slovenské odběratele. Doporučená prodejní cena je 1 199 Kč (48 €).</p>
-</div></section>
+    </section>
+    <div class="foot">Velkoobchodní nabídka Zenko · ceník platný od října 2026</div>
+  </footer>
 
-<section><div class="in">
-  <div class="head">
-    <div class="eyebrow">Proč u vás bude prodávat</div>
-    <h2>Produkt, který už zákazníci znají a kupují</h2>
-  </div>
-  <div class="reasons">
-    <div><h3>Ověřený prodejem</h3><p>Shilajit prodáváme na vlastním e-shopu zenko.cz. Máme stovky spokojených zákazníků a recenze, které si můžete přečíst přímo na webu.</p></div>
-    <div><h3>Rozbor každé šarže</h3><p>Ke každé šarži je laboratorní protokol, včetně obsahu kyseliny fulvové a těžkých kovů. Můžete ho dát zákazníkům k produktu.</p></div>
-    <div><h3>Pravá pryskyřice</h3><p>Ne tablety ani prášek. Čistá himálajská pryskyřice, po které sahají zákazníci, kteří o shilajitu něco vědí.</p></div>
-    <div><h3>Podklady k prodeji</h3><p>Dodáme fotky produktu, popis do e-shopu a laboratorní protokoly, abyste mohli začít prodávat hned.</p></div>
-  </div>
-</div></section>
-
-<section><div class="in">
-  <div class="head">
-    <div class="eyebrow">Laboratorní rozbor · šarže 0926247</div>
-    <h2>Čistotu dokládáme papírem, ne slibem</h2>
-  </div>
-  <div class="lab">
-    <div class="txt">
-      <div class="big">77,84 %<small>kyseliny fulvové v šarži 0926247</small></div>
-      <div class="big">85<small>minerálů a stopových prvků</small></div>
-      <p style="margin:0;color:var(--muted)">Laboratorní protokoly vám pošleme v plném rozlišení spolu s nabídkou.</p>
-    </div>
-    <figure><img src="img/protokol-tezke-kovy.jpg" alt="Protokol o zkoušce – těžké kovy, šarže 0926247" loading="lazy"><figcaption>Protokol 1 – těžké kovy</figcaption></figure>
-    <figure><img src="img/protokol-kyselina-fulvova.jpg" alt="Protokol o zkoušce – kyselina fulvová, šarže 0926247" loading="lazy"><figcaption>Protokol 2 – kyselina fulvová</figcaption></figure>
-  </div>
-</div></section>
-
-<section><div class="in">
-  <div class="head">
-    <div class="eyebrow">Jak začít</div>
-    <h2>Objednávka bez složitostí</h2>
-  </div>
-  <ol class="steps">
-    <li><b>Napište nám</b><span>Pošlete, kolik kusů a jakou velikost chcete. Stačí e-mail nebo telefon.</span></li>
-    <li><b>Pošleme fakturu</b><span>Vystavíme fakturu podle ceníku a zdarma pošleme fotky, popis do e-shopu a protokoly.</span></li>
-    <li><b>Zboží odešleme</b><span>Po zaplacení zboží odešleme na vaši adresu v ČR nebo na Slovensku.</span></li>
-  </ol>
-  <div class="wl">
-    <h3>Chcete shilajit pod vlastní značkou?</h3>
-    <p>Dodáme stejnou pryskyřici 30 g s vaší etiketou. Od 300 ks 15 € za kus, od 500 ks 13,50 € a od 1 000 ks 11,50 €. Návrh etikety připravíme za jednorázový poplatek, od 500 ks zdarma. Platí se 50 % záloha při objednávce a doplatek před expedicí. K šarži dodáme laboratorní protokoly, notifikaci a texty na etiketě si zajišťuje odběratel. Pod vaší značkou umíme i kapsle, gummies, elektrolyty nebo kreatin.</p>
-  </div>
-</div></section>
-</main>
-
-<div class="contact" id="kontakt"><div class="in">
-  <div>
-    <div class="eyebrow" style="color:var(--amber)">Objednávky a kontakt</div>
-    <h2 style="margin-top:10px">Ozvěte se nám</h2>
-    <p>Rádi vám pošleme protokoly v plném rozlišení nebo připravíme nabídku na větší odběr.</p>
-  </div>
-  <div class="who">
-    <div class="row"><span>Kontaktní osoba</span><b>Zdeněk Matuška</b></div>
-    <div class="row"><span>E-mail</span><b>zdenek@zenforlife.cz</b></div>
-    <div class="row"><span>Telefon</span><b>+420 737 462 274</b></div>
-    <div class="row"><span>Fakturační údaje</span><b>Zenforlife s.r.o.</b><small>třída 1. máje 3414/11a, 690 02 Břeclav · IČ 19632461 · DIČ CZ19632461</small></div>
-  </div>
-</div></div>
-<footer><div class="in">Zenforlife s.r.o. · e-shop zenko.cz · Ceník platný od října 2026</div></footer>
-
+<script>
+(function(){
+  var rows=[].slice.call(document.querySelectorAll('#tiers tbody tr'));
+  var q=document.getElementById('qty'),cta=document.getElementById('cta-bottom');
+  var fmt=function(n){return n.toLocaleString('cs-CZ')+' Kč'};
+  var cur=rows[0];
+  function tierFor(n){var t=rows[0];rows.forEach(function(r){if(n>=+r.dataset.min)t=r});return t}
+  function update(n,typing){
+    n=Math.max(10,Math.round(n)||10);
+    if(!typing)q.value=n;
+    var t=tierFor(n),p=+t.dataset.p;
+    if(t!==cur){
+      rows.forEach(function(r){r.classList.toggle('on',r===t);r.setAttribute('aria-pressed',r===t)});
+      var s=t.querySelector('.stamp');s.classList.remove('press');void s.offsetWidth;s.classList.add('press');
+      cur=t;
+    }
+    document.getElementById('s-buy').textContent=fmt(n*p);
+    document.getElementById('s-sell').textContent=fmt(n*1199);
+    document.getElementById('s-gain').textContent=fmt(n*(1199-p));
+    cta.href='mailto:zdenek@zenforlife.cz?subject='+encodeURIComponent('Objednávka Shilajit 30 g – '+n+' ks');
+    cta.textContent='Objednat '+n+' ks e-mailem';
+  }
+  rows.forEach(function(r){
+    r.tabIndex=0;r.setAttribute('role','button');r.setAttribute('aria-pressed',r===cur);
+    r.setAttribute('aria-label','Zvolit '+r.querySelector('.q').textContent+' za '+r.querySelector('.p').textContent+' za kus');
+    var go=function(){update(+r.dataset.min)};
+    r.addEventListener('click',go);
+    r.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();go()}});
+  });
+  document.getElementById('minus').addEventListener('click',function(){update((+q.value||10)-10)});
+  document.getElementById('plus').addEventListener('click',function(){update((+q.value||10)+10)});
+  q.addEventListener('input',function(){if(+q.value>=10)update(+q.value,true)});
+  q.addEventListener('change',function(){update(+q.value)});
+})();
+</script>
 </body>
 </html>
